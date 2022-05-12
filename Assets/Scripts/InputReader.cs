@@ -1,13 +1,14 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class InputReader : MonoBehaviour, Controls.IPlayerActions
 {
-    public event Action jumpEvent;
-    public event Action dodgeEvent;
+    public event Action JumpEvent;
+    public event Action DodgeEvent;
+    public event Action TargetEvent;
+    public event Action CancelEvent;
+
 
     public Vector2 MovementValue { get; private set; }
 
@@ -28,16 +29,14 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (!context.performed) return;
-        
-        jumpEvent?.Invoke();
+        if (!context.performed) return;       
+        JumpEvent?.Invoke();
     }
 
     public void OnDodge(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
-
-        dodgeEvent?.Invoke();
+        DodgeEvent?.Invoke();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -48,5 +47,17 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
     public void OnLook(InputAction.CallbackContext context)
     {
         
+    }
+
+    public void OnTarget(InputAction.CallbackContext context)
+    {
+        if (!context.performed) { return; }
+        TargetEvent?.Invoke();
+    }
+
+    public void OnCancel(InputAction.CallbackContext context)
+    {
+        if (!context.performed) { return; }
+        CancelEvent?.Invoke();
     }
 }
