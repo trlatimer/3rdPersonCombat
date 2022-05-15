@@ -219,7 +219,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3518755408698752565}
-  m_LocalRotation: {x: 0.1481916, y: -0.34988505, z: 0.056157853, w: 0.92329085}
+  m_LocalRotation: {x: 0.14819159, y: -0.34988508, z: 0.05615785, w: 0.92329085}
   m_LocalPosition: {x: 12.997028, y: 1.2951083, z: -4.7612123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1051626, y: 1}
+    m_SensorSize: {x: 2.3463855, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1051626, y: 1}
+    m_SensorSize: {x: 2.3463855, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -555,7 +555,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1051626, y: 1}
+    m_SensorSize: {x: 2.3463855, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -633,7 +633,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1051626, y: 1}
+    m_SensorSize: {x: 2.3463855, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -965,7 +965,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1051626, y: 1}
+    m_SensorSize: {x: 2.3463855, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1126,7 +1126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9062209877257526751}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0000011920929, y: 0.0000009536743, z: 5.6239843}
+  m_LocalPosition: {x: 0.00000166893, y: 0.000000834465, z: 5.623985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1152,12 +1152,6 @@ MonoBehaviour:
   - target: {fileID: 4242714720546835802}
     weight: 0.25
     radius: 2
-  - target: {fileID: 0}
-    weight: 1
-    radius: 2
-  - target: {fileID: 4242714720546835802}
-    weight: 1
-    radius: 2
 --- !u!1001 &4128384185241530778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1166,6 +1160,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 3674340592096792662}
     m_Modifications:
+    - target: {fileID: 1498594355472187564, guid: d27794f0bb1bf74438a300a53562b764,
+        type: 3}
+      propertyPath: cinTargetGroup
+      value: 
+      objectReference: {fileID: 6860291210712702686}
     - target: {fileID: 6209320756722181789, guid: d27794f0bb1bf74438a300a53562b764,
         type: 3}
       propertyPath: m_RootOrder
